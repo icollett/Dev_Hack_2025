@@ -46,6 +46,7 @@ exports.deleteChatHistory = exports.getChatHistory = exports.createMessage = voi
 const chatbotService = __importStar(require("../services/chatbotService"));
 const createMessage = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
+        console.log(req.body);
         const messageResponse = yield chatbotService.createMessage(req.body);
         res.status(201).json({ aiResponse: messageResponse.aiResponse, message: messageResponse.message }).header('Access-Control-Allow-Origin', '*');
     }
