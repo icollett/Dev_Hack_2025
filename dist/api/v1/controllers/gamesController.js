@@ -46,7 +46,8 @@ exports.getQuizQuestion = void 0;
 const gamesService = __importStar(require("../services/gamesService"));
 const getQuizQuestion = (req, res, next) => __awaiter(void 0, void 0, void 0, function* () {
     try {
-        const question = yield gamesService.getQuestion(req.params);
+        console.log(req.query);
+        const question = yield gamesService.getQuestion(req.query);
         res.status(200).json(question);
     }
     catch (error) {
