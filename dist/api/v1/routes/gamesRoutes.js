@@ -37,10 +37,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
-const chatbotController = __importStar(require("../controllers/chatbotController"));
+const gamesController = __importStar(require("../controllers/gamesController"));
 const router = express_1.default.Router();
-router.post("/", chatbotController.createMessage);
-router.get("/", chatbotController.getChatHistory);
-router.delete("/", chatbotController.deleteChatHistory);
+router.get("/quiz", gamesController.getQuizQuestion);
 exports.default = router;
-//# sourceMappingURL=chatbotRoutes.js.map
+//# sourceMappingURL=gamesRoutes.js.map

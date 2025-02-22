@@ -6,9 +6,8 @@ const router: Router = express.Router();
 
 router.post("/", chatbotController.createMessage);
 
-//router.get("/", chatbotController.getChatHistroy);
+router.get("/", chatbotController.getChatHistory);
 
 router.delete("/", chatbotController.deleteChatHistory);
 
 export default router
-
