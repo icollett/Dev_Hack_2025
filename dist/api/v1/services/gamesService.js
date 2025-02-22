@@ -78,7 +78,7 @@ const getQuestion = (params) => __awaiter(void 0, void 0, void 0, function* () {
     });
     const promptMessage = `Please give me a scenario in the format of an ${params.format}, on the topic of ${params.topic}.`;
     const result = yield chatSession.sendMessage(promptMessage);
-    const resultText = result.response.text();
+    const resultText = JSON.parse(result.response.text());
     console.log(resultText);
     return resultText;
 });

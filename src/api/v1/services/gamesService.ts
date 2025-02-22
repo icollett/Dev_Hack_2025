@@ -82,7 +82,7 @@ export const getQuestion = async (params: Partial<questionParams>): Promise<stri
 	const promptMessage: string = `Please give me a scenario in the format of an ${params.format}, on the topic of ${params.topic}.`;
 	
 	const result = await chatSession.sendMessage(promptMessage);
-	const resultText: string = result.response.text();
+	const resultText: string = JSON.parse(result.response.text());
 	console.log(resultText);
 
 	return resultText;
