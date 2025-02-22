@@ -1,0 +1,112 @@
+[
+  {
+    "type": "email",
+    "message": "Dear Customer, Your account has been temporarily suspended due to unusual activity. Please verify your account details immediately by clicking on the link below: [fake link]. Failure to do so may result in permanent account closure.",
+    "response": [
+      "Generic greeting (\"Dear Customer\")",
+      "Urgent language and threats of account closure",
+      "Suspicious link that doesn't match the bank's official website",
+      "Requests for sensitive information (password, PIN, etc.)",
+      "Poor grammar and spelling"
+    ]
+  },
+  {
+    "type": "text",
+    "message": "Your package from [shipping company name] is awaiting delivery. Please confirm your address and pay a small delivery fee: [fake link]",
+    "response": [
+      "Unexpected message about a package",
+      "Link to an unknown or shortened URL",
+      "Request for immediate payment",
+      "Generic message, doesn't specify package details",
+      "Often contains slight misspellings of company names"
+    ]
+  },
+    {
+    "type": "email",
+    "message": "Congratulations! You have won a large sum of money in our international lottery. To claim your prize, please provide your personal information and pay a processing fee: [fake link]",
+    "response": [
+      "Unsolicited notification of winning a lottery or sweepstakes",
+      "Request for upfront payment or fees",
+      "Promises of large sums of money",
+      "Poor grammar and spelling",
+      "Requests personal data"
+    ]
+  },
+  {
+    "type": "email",
+    "message": "Your computer has detected a critical error. Please call our technical support hotline immediately at [fake phone number] to resolve the issue. Failure to do so may result in data loss.",
+    "response": [
+      "Unexpected notification of a computer error",
+      "Urgent language and threats of data loss",
+      "Request to call a phone number",
+      "Claims to be from a well-known tech company (e.g., Microsoft, Apple)",
+      "Uses scare tactics"
+    ]
+  },
+  {
+    "type": "text",
+    "message": "Hi Grandma/Grandpa, it's me! I'm in trouble and need your help. I'm in jail/hospital and need you to send money to [account/address] ASAP. Please don't tell my parents.",
+    "response": [
+      "Claims to be a grandchild in distress",
+      "Requests money urgently",
+      "Asks to keep the situation secret",
+      "Uses vague language or doesn't identify themselves clearly",
+      "Plays on emotional vulnerability"
+    ]
+  },
+  {
+    "type": "email",
+    "message": "Dear Investor, We have a limited-time opportunity for you to invest in a high-return, low-risk venture. Guaranteed profits! Click here: [fake link]",
+    "response": [
+      "Promises of guaranteed high returns with low risk",
+      "Urgent language and pressure to invest quickly",
+      "Unsolicited investment offers",
+      "Lack of verifiable information about the investment",
+      "Requests money to be sent to unknown accounts"
+    ]
+  },
+    {
+    "type": "text",
+    "message": "Urgent! Donate now to help victims of [recent disaster]. Send money to [account/link]. Every dollar helps!",
+    "response": [
+      "Preys on current events or disasters",
+      "Urgent requests for immediate donations",
+      "Provides vague details about the charity",
+      "Uses generic donation links or requests direct transfers",
+      "Lack of verifiable charity information"
+    ]
+  },
+  {
+    "type": "email",
+    "message": "You are due a tax refund. Please click this link to provide your bank details for direct deposit. [fake link]",
+    "response": [
+      "Impersonates a government agency (IRS, CRA, etc.)",
+      "Claims you are owed a refund or payment",
+      "Requests sensitive financial information",
+      "Uses official-looking logos and language",
+      "Contains threats of penalties for non-compliance"
+    ]
+  },
+  {
+    "type": "text",
+    "message": "Hey, it's me! I got locked out of my account and need you to send me some money to pay a bill until I get it fixed. Can you send me [amount] to [payment method]?",
+    "response": [
+      "Claims to be a friend or acquaintance",
+      "Requests money due to an urgent situation",
+      "Uses a sense of urgency and emotional manipulation",
+      "May have a recently created or compromised social media account",
+      "Will avoid phone calls or video chats"
+    ]
+  },
+  {
+      "type": "email",
+      "message": "Congratulations, you have been selected for a remote work opportunity! Please fill out this form with your personal information and send a small application fee of [amount] to [payment method].",
+      "response": [
+        "Unsolicited job offer",
+        "Requests personal information and/or payment upfront",
+        "Promises high pay for minimal work",
+        "Uses generic job descriptions",
+        "Lacks legitimate company contact information"
+      ]
+    }
+]
