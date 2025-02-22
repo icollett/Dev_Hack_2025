@@ -40,7 +40,7 @@ const express_1 = __importDefault(require("express"));
 const chatbotController = __importStar(require("../controllers/chatbotController"));
 const router = express_1.default.Router();
 router.post("/", chatbotController.createMessage);
-//router.get("/", chatbotController.getChatHistroy);
+router.get("/", chatbotController.getChatHistory);
 router.delete("/", chatbotController.deleteChatHistory);
 exports.default = router;
 //# sourceMappingURL=chatbotRoutes.js.map
