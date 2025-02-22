@@ -11,7 +11,7 @@ export const createMessage = async (
 		console.log(req.body);
 		const messageResponse: MessageResponse = await chatbotService.createMessage(req.body);
 
-		res.status(201).json({ aiResponse: messageResponse.aiResponse, message: messageResponse.message }).header('Access-Control-Allow-Origin', '*')
+		res.status(201).json({ aiResponse: messageResponse.aiResponse, message: messageResponse.message }).set('Access-Control-Allow-Origin', '*')
 	} catch (error) {
 		next(error);
 	};

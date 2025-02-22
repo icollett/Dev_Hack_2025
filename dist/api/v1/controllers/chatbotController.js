@@ -48,7 +48,7 @@ const createMessage = (req, res, next) => __awaiter(void 0, void 0, void 0, func
     try {
         console.log(req.body);
         const messageResponse = yield chatbotService.createMessage(req.body);
-        res.status(201).json({ aiResponse: messageResponse.aiResponse, message: messageResponse.message }).header('Access-Control-Allow-Origin', '*');
+        res.status(201).json({ aiResponse: messageResponse.aiResponse, message: messageResponse.message }).set('Access-Control-Allow-Origin', '*');
     }
     catch (error) {
         next(error);
