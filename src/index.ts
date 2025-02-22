@@ -1,16 +1,16 @@
 import express, { Request, Response } from 'express'
 import chatbot from "./api/v1/routes/chatbotRoutes"
-const app = express()
+import games from "./api/v1/routes/gamesRoutes"
+
+const app = express();
+app.use(express.json());
 const port = process.env.PORT || 8080
 
-app.get('/', (_req: Request, res: Response) => {
-	res.send('Express Typescript on Vercel')
+app.get('/', (req: Request, res: Response) => {
+	res.send('Hello World!')
 })
 
-app.get('/ping', (_req: Request, res: Response) => {
-	res.send('pong 🏓')
-})
-
+app.use('api/v1/games', games);
 app.use('/api/v1/chatbot', chatbot);
 
 app.listen(port, () => {

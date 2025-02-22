@@ -8,6 +8,7 @@ export const createMessage = async (
 	next: NextFunction
 ): Promise<void> => {
 	try {
+		console.log(req.body);
 		const messageResponse: MessageResponse = await chatbotService.createMessage(req.body);
 
 		res.status(201).json({ aiResponse: messageResponse.aiResponse, message: messageResponse.message })
