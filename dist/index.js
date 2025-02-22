@@ -12,7 +12,7 @@ const port = process.env.PORT || 8080;
 app.get('/', (req, res) => {
     res.send('Hello World!');
 });
-app.use('api/v1/games', gamesRoutes_1.default);
+app.use('/api/v1/games', gamesRoutes_1.default);
 app.use('/api/v1/chatbot', chatbotRoutes_1.default);
 app.listen(port, () => {
     return console.log(`Server is listening on ${port}`);

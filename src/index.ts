@@ -10,7 +10,7 @@ app.get('/', (req: Request, res: Response) => {
 	res.send('Hello World!')
 })
 
-app.use('api/v1/games', games);
+app.use('/api/v1/games', games);
 app.use('/api/v1/chatbot', chatbot);
 
 app.listen(port, () => {
