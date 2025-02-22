@@ -7,7 +7,8 @@ export const getQuizQuestion = async (
 	next: NextFunction
 ): Promise<void> => {
 	try {
-		const question: string = await gamesService.getQuestion(req.params);
+		console.log(req.query);
+		const question: string = await gamesService.getQuestion(req.query);
 		res.status(200).json(question);
 	} catch (error) {
 		next(error);
